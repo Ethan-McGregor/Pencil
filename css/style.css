@@ -1,0 +1,413 @@
+/* general container element to constrain content width on wider screens */
+
+.Container {
+    margin-top: 0;
+    padding-right: 20px;
+    padding-left: 20px;
+    display: flex;
+}
+h1 {
+    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 100;
+}
+body {
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+h2,
+h3 {
+    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+main > h2 {
+    margin-top: 9em;
+    text-align: center;
+    font-variant: small-caps;
+}
+p {
+    line-height: 1.43;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-bottom: 0px;
+}
+nav {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 100;
+    background: linear-gradient(100deg, #391D18, #814236);
+    color: #dfdfdf;
+    width: 100%;
+    max-height: 100px;
+    margin-bottom: 10px;
+}
+nav li {
+    display: inline;
+}
+nav i {
+    padding-right: 15px;
+    margin-left: -1.5em;
+}
+nav a {
+    color: #dfdfdf;
+    text-decoration: none;
+    padding-right: 10px;
+}
+nav a:hover {
+    color: white;
+}
+nav #cart {
+    padding-left: 95%;
+}
+header {
+    margin-top: 100px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(0deg, #391D18, #814236);
+    color: white;
+    margin-top: 2.5em;
+    padding-left: 18px;
+    width: 100%;
+}
+/* no button shown when screen is too small */
+#button {
+    display: none;
+}
+body {
+    background: #f8f8f8;
+}
+.main > h1 {
+    color: black;
+    margin-top: -.5em;
+    text-align: center;
+    padding-top: 5px;
+}
+/*Controlls most of the elemts on the page*/
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+/*Box is most of the elements*/
+.box {
+    background: white;
+    padding: 10px;
+    margin: 10px;
+    border: solid #dfdfdf;
+    border-radius: 3px;
+    width: auto;
+}
+.box > svg {
+    margin-bottom: -80px;
+    color: #814236;
+    padding: 10px;
+}
+.box > p,
+h3 {
+    margin-left: 60px;
+    padding-left: 10px;
+}
+.uses {
+    padding-bottom: 0px;
+    padding-top: 50px;
+    text-align: center;
+    margin-top: 0em;
+}
+#uses > p,
+#uses > h3 {
+    margin-left: 0px;
+}
+/*Next few classes control box elepments and add picture*/
+#one {
+    margin-bottom: 10px;
+}
+#notes {
+    height: 150px;
+    width: 100%;
+    padding: 11.5px;
+    margin-left: -12px;
+    margin-top: -15px;
+    background-image: url(../img/note-taking.jpg);
+    background-size: 100%;
+    background-position: center;
+}
+#art {
+    height: 150px;
+    width: 100%;
+    padding: 11.5px;
+    margin-left: -12px;
+    margin-top: -15px;
+    background-image: url(../img/art.jpg);
+    background-size: 100%;
+    background-position: center;
+}
+#drafting {
+    height: 150px;
+    width: 100%;
+    padding: 11.5px;
+    margin-left: -12px;
+    margin-top: -15px;
+    background-image: url(../img/drafting.jpg);
+    background-size: 100%;
+    background-position: center;
+}
+#coloring {
+    height: 150px;
+    width: 100%;
+    padding: 11.5px;
+    margin-left: -12px;
+    margin-top: -15px;
+    background-image: url(../img/coloring.jpg);
+    background-size: 100%;
+    background-position: center;
+}
+/*These are for the testimonial section, the boxes were to diffrent to just use the standart box container*/
+.box-two {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#testimonial {
+    background-color: #f8f8f8;
+    border: none;
+}
+#testimonial > p {
+    margin-left: 80px;
+}
+#test > h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+#profile {
+    border-radius: 50px;
+    float: left;
+}
+#testh2 {
+    margin-top: 50px;
+}
+#testimonial > p {
+    text-align: left;
+    margin-bottom: 0px;
+}
+span {
+    color: #999999;
+    line-height: 80%;
+}
+footer {
+    height: 200px;
+    background-color: #391d18;
+    color: #eeeeee;
+    text-decoration: none;
+    padding: 5px;
+}
+#footerSelect {
+    color: #eeeeee;
+    margin-left: 1%;
+    font-size: 10px;
+}
+footer a {
+    text-decoration: none;
+    color: #aaaaaa;
+}
+footer > h3 {
+    margin-left: -px;
+}
+#footerSelect > a {
+    padding-right: 15px;
+}
+#footerSelect > a:hover {
+    color: #aaaaaa;
+}
+
+/* Next screen size*/
+@media (min-width: 768px) {
+    .container {
+        width: auto;
+    }
+    .box-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    header {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        top: -44px;
+        margin-top: -22px;
+        margin-left: -1em;
+        background-image: url(../img/pencil-header-sm.jpg);
+        background-position: right bottom;
+        color: black;
+        height: 250px;
+        background-size: 100%;
+        padding-top: 50px;
+        padding-bottom: 100px;
+        padding-left: 100px;
+        font-size: 30px;
+    }
+    .box {
+        background: white;
+        padding: 10px;
+        margin: 10px;
+        border: solid #dfdfdf;
+        border-radius: 3px;
+        width: 44%;
+    }
+    main > h2 {
+        margin-top: 13em;
+    }
+    .box > h3 {
+        margin-left: 0px;
+        text-align: center;
+    }
+    .box > svg {
+        padding-top: 10px;
+        padding-left: 40px;
+        display: block;
+        margin: 0 auto;
+    }
+    header > p {
+        width: 62%;
+    }
+    #button {
+        display: inline-block;
+        margin-bottom: 15px;
+        background: #814236;
+        color: white;
+        border: #391d18;
+        padding: 8px;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    #button > i{
+      padding-right: 10px;
+    }
+    #button:hover {
+        background: #5d3027;
+    }
+    nav {
+        display: none;
+    }
+    .box-two .box {
+        padding-left: 30px;
+        width: 90%;
+    }
+    footer {
+        height: 200px;
+        background-color: #391d18;
+        color: #eeeeee;
+        text-decoration: none;
+        padding: 5px;
+        padding-left: 70px;
+    }
+    #footerSelect {
+        color: #eeeeee;
+        margin-left: 70%;
+        font-size: 10px;
+    }
+}
+
+/*Next xcreen size*/
+@media (min-width: 992px) {
+    .container {
+        width: auto;
+    }
+    header {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        top: -44px;
+        margin-top: -22px;
+        margin-left: -1em;
+        background-image: url(../img/pencil-header-md.jpg);
+        background-position: right bottom;
+        color: black;
+        height: 250px;
+        padding-top: 50px;
+        padding-bottom: 100px;
+        padding-left: 100px;
+        background-size: 100%;
+        font-size: 30px;
+    }
+    .box-two {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    #testimonial.box {
+        min-width: 280px;
+        ;
+        padding-top: 30px;
+    }
+    #testimonial > p {
+        text-align: left;
+    }
+    .box > svg {
+        padding-top: 10px;
+        padding-left: 0px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+/*Largest screen size*/
+@media (min-width: 1200px) {
+    .container {
+        width: auto;
+    }
+    .box-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    header {
+        top: -44px;
+        margin-top: -22px;
+        margin-left: -1em;
+        background-image: url(../img/pencil-header-lg.jpg);
+        background-position: bottom;
+        color: black;
+        height: 250px;
+        padding-top: 50px;
+        padding-bottom: 100px;
+        padding-left: 100px;
+        min-width: 100%;
+        font-size: 30px;
+    }
+    header > p {
+        width: 50%;
+    }
+    nav {
+        display: none;
+    }
+    .box {
+        max-width: 250px;
+    }
+    #uses .box {
+        max-width: 40%;
+    }
+    .box > p,
+    h3 {
+        margin-left: 0px;
+        text-align: center;
+    }
+    .box > svg {
+        padding-top: 30px;
+        padding-left: 0px;
+        display: block;
+        margin: 0 auto;
+    }
+    header > p {
+        width: 62%;
+    }
+    .box-two .box {
+        padding-left: 30px;
+        width: 60%;
+    }
+}
